@@ -29,14 +29,23 @@ const { pageTitle } = Astro.props;
         </main>
         <script>
             function colorMode() {
+                // if (
+                //     localStorage.theme === "light" ||
+                //     (!("theme" in localStorage) &&
+                //     window.matchMedia("(prefers-color-scheme: light)").matches)
+                // ) {
+                //     document.documentElement.classList.add("light");
+                // } else {
+                //     document.documentElement.classList.remove("light");
+                // }
                 if (
-                    localStorage.theme === "light" ||
+                    localStorage.theme === "dark" ||
                     (!("theme" in localStorage) &&
-                    window.matchMedia("(prefers-color-scheme: light)").matches)
+                    window.matchMedia("(prefers-color-scheme: dark)").matches)
                 ) {
-                    document.documentElement.classList.add("light");
+                    document.documentElement.classList.add("dark");
                 } else {
-                    document.documentElement.classList.remove("light");
+                    document.documentElement.classList.remove("dark");
                 }
               }
             

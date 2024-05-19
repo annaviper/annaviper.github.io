@@ -9,11 +9,11 @@ const projectsCollection = defineCollection({
         url: z.string(),
         alt: z.string()
       }),
-      worksImage1: z.object({
+      projectsImage1: z.object({
         url: z.string(),
         alt: z.string()
       }),
-      worksImage2: z.object({
+      projectsImage2: z.object({
         url: z.string(),
         alt: z.string()
       }),
